@@ -1,4 +1,4 @@
-import type { NavbarItemProps } from "../types/NavbarItemProps";
+import type { NavbarItemProps } from "../types";
 
 const Navbar = () => {
   const navbarElements: NavbarItemProps[] = [
