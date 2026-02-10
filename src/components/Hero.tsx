@@ -1,5 +1,10 @@
+<<<<<<< HEAD
 import playstation from "../assets/playstation.png";
 import airpods from "../assets/airpods.png";
+=======
+import playstation from "../../public/playstation.png";
+import airpods from "../../public/airpods.png";
+>>>>>>> 062ba80a2df0b42a6546283d4a51fc35715bb9e2
 import type { StarValutationProps } from "../types";
 import type { CardProps } from "../types";
 
