@@ -13,7 +13,7 @@ const Modal = () => {
 
   return (
     <div
-      className={`modal ${isOpen ? "p-10 fixed top-1/2 left-1/2 transform z-10 -translate-x-1/2 -translate-y-1/2 bg-white shadow-2xl rounded-2xl" : "hidden"}`}
+      className={`modal ${isOpen ? "hidden md:block p-10 fixed top-1/2 left-1/2 transform z-10 -translate-x-1/2 -translate-y-1/2 bg-white shadow-2xl rounded-2xl" : "hidden"}`}
     >
       <div onClick={closeModal}></div>
       <div>

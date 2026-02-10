@@ -29,7 +29,7 @@ const Airpods = () => {
             <span className="mt-2">(3.400)</span>
           </p>
           <hr className="mt-5 mb-5" />
-          <div className="flex justify-between">
+          <div className="flex flex-col md:flex-row justify-between">
             <p className="text-2xl font-bold">&euro;359.99</p>
             <p className="mt-2">I prezzi degli articoli includo l'IVA.</p>
           </div>
