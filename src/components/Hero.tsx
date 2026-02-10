@@ -1,16 +1,13 @@
-<<<<<<< HEAD
 import playstation from "../assets/playstation.png";
 import airpods from "../assets/airpods.png";
-=======
-import playstation from "../../public/playstation.png";
-import airpods from "../../public/airpods.png";
->>>>>>> 062ba80a2df0b42a6546283d4a51fc35715bb9e2
 import type { StarValutationProps } from "../types";
 import type { CardProps } from "../types";
+import { Link } from "react-router";
 
 const Hero = () => {
   const cards: CardProps[] = [
     {
+      link: "/airpods",
       name: "Apple AirPods Pro",
       price: 479.99,
       isOnSale: true,
@@ -20,6 +17,7 @@ const Hero = () => {
       imgWidth: 200,
     },
     {
+      link: "/playstation",
       name: "Playstation 5",
       price: 499.99,
       starValutation: 5,
@@ -46,6 +44,7 @@ const Hero = () => {
 };
 
 const Card = ({
+  link,
   name,
   className,
   bannerText,
@@ -60,7 +59,7 @@ const Card = ({
     isOnSale && String(price - (price * discount) / 100).slice(0, -2);
 
   return (
-    <div className={className}>
+    <Link to={link} className={className}>
       <div className="py-10 mt-10 bg-white rounded-3xl hover:shadow-2xl text-center items-center cursor-pointer transition-all duration-500 flex flex-col justify-between gap-10 hover:-translate-y-2">
         <div
           className={`${isOnSale ? "bg-red-500" : "bg-green-500"} w-full text-white py-4 px-2 text-md`}
@@ -73,21 +72,21 @@ const Card = ({
           <p className="text-xl">{name}</p>
           <div className="flex justify-center gap-3 mt-4">
             <span className={`text-xl ${isOnSale ? "line-through" : ""} mt-1`}>
-              €{price}
+              &euro;{price}
             </span>
             {isOnSale && (
               <span className="text-2xl font-bold text-red-500">
-                €{discountedPrice}
+                &euro;{discountedPrice}
               </span>
             )}
           </div>
         </div>
       </div>
-    </div>
+    </Link>
   );
 };
 
-const StarValutation = ({ number }: StarValutationProps) => {
+export const StarValutation = ({ number }: StarValutationProps) => {
   return (
     <div className="flex justify-center">
       {Array.from(Array(number).keys()).map((_, index) => (

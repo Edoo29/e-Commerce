@@ -1,5 +1,6 @@
 export type NavbarItemProps = {
   name: string;
+  link: string;
 };
 
 export type StarValutationProps = {
@@ -7,6 +8,7 @@ export type StarValutationProps = {
 };
 
 export type CardProps = {
+  link: string;
   name: string;
   className?: string;
   bannerText?: string;
