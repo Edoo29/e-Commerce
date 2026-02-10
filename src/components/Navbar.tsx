@@ -8,7 +8,7 @@ const Navbar = () => {
   ];
 
   return (
-    <nav className="flex w-full justify-between px-10 py-5">
+    <nav className="hidden md:flex w-full justify-between px-10 py-5">
       {/* Left side */}
       <NavbarItem name="e-Commerce" link={"/"} />
       {/* middle side */}

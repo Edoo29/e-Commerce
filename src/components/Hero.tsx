@@ -31,14 +31,14 @@ const Hero = () => {
 
   return (
     <section className="flex flex-col items-center justify-evenly mt-16">
-      <h1 className="font-extrabold text-6xl">
+      <h1 className="font-extrabold text-3xl md:text-6xl">
         Il lato <span className="text-red-500">intelligente</span>
         <br />
         dello shopping.
       </h1>
-      <div className="flex justify-center gap-20 w-full mt-4">
+      <div className="flex flex-col md:flex-row justify-center gap-10 md:gap-20 w-full mt-4 px-10">
         {cards.map((card, index) => (
-          <Card className="w-1/3" key={index} {...card} />
+          <Card className="w-full md:w-1/3" key={index} {...card} />
         ))}
       </div>
     </section>

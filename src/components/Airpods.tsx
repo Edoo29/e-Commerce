@@ -6,7 +6,7 @@ const Airpods = () => {
   return (
     <div>
       <Navbar />
-      <div className="flex justify-evenly gap-4 mt-20">
+      <div className="flex flex-col md:flex-row items-center p-10 justify-evenly gap-4 mt-20">
         <div className="flex flex-col gap-10">
           <h2 className="font-extrabold text-4xl">Scheda prodotto</h2>
           <img
