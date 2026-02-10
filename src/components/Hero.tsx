@@ -1,5 +1,5 @@
-import playstation from "../../public/playstation.png";
-import airpods from "../../public/airpods.png";
+import playstation from "../assets/playstation.png";
+import airpods from "../assets/airpods.png";
 import type { StarValutationProps } from "../types";
 import type { CardProps } from "../types";
 
