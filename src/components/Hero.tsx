@@ -20,6 +20,8 @@ const Hero = () => {
       link: "/playstation",
       name: "Playstation 5",
       price: 499.99,
+      isOnSale: false,
+      discount: 0,
       starValutation: 5,
       img: playstation,
       bannerText: "Disponibilità immediata",
@@ -56,7 +58,7 @@ const Card = ({
   imgWidth,
 }: CardProps) => {
   const discountedPrice =
-    isOnSale && String(price - (price * discount) / 100).slice(0, -2);
+    isOnSale && (price - (price * discount) / 100).toFixed(2);
 
   return (
     <Link to={link} className={className}>

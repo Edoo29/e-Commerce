@@ -13,8 +13,8 @@ export type CardProps = {
   className?: string;
   bannerText?: string;
   price: number;
-  isOnSale?: boolean;
-  discount?: number;
+  isOnSale: boolean;
+  discount: number;
   starValutation: 1 | 2 | 3 | 4 | 5;
   img: string;
   imgWidth: number;
